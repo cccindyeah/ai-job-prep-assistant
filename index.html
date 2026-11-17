@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 求職準備助手</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav container">
+      <div class="brand">JobPrep AI</div>
+      <a class="nav-link" href="#workflow">開始準備</a>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow">AI Job Preparation Assistant</p>
+      <h1>AI 求職準備助手</h1>
+      <p class="hero-text">
+        從職缺分析、履歷準備到面試練習，
+        用一套清楚的流程整理你的求職準備。
+      </p>
+      <a class="primary-btn" href="#workflow">開始準備</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="workflow">
+      <div class="section-heading">
+        <p class="eyebrow">STEP BY STEP</p>
+        <h2>三個步驟完成求職準備</h2>
+        <p>目前為 MVP 示範版本，使用範例內容呈現未來 AI 功能。</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="step">01</span>
+          <h3>職缺分析</h3>
+          <p>貼上職缺 JD，整理核心能力、工作內容與履歷應強調的重點。</p>
+          <a href="#jd-analysis">查看示範 →</a>
+        </article>
+
+        <article class="card">
+          <span class="step">02</span>
+          <h3>履歷準備</h3>
+          <p>依照職缺需求，找出最相關的經驗、技能與履歷 bullet 重點。</p>
+          <a href="#resume">查看示範 →</a>
+        </article>
+
+        <article class="card">
+          <span class="step">03</span>
+          <h3>面試準備</h3>
+          <p>整理動機題、行為題與職務相關問題，建立基本面試題庫。</p>
+          <a href="#interview">查看示範 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="jd-analysis">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">01 · JOB ANALYSIS</p>
+          <h2>職缺分析</h2>
+          <p class="muted">
+            先貼入你想申請的職缺內容。此版本會顯示固定示範結果，
+            未來可串接 AI，自動分析不同 JD。
+          </p>
+
+          <label for="jdInput">貼上職缺 JD</label>
+          <textarea id="jdInput" rows="10" placeholder="例如：We are looking for a graduate candidate with strong analytical, communication and project management skills..."></textarea>
+          <button class="primary-btn button" id="analyzeBtn">產生示範分析</button>
+        </div>
+
+        <div class="result-panel" id="analysisResult">
+          <div class="result-empty">
+            <h3>分析結果會顯示在這裡</h3>
+            <p>輸入職缺內容後，點擊「產生示範分析」。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="resume">
+      <div class="section-heading left">
+        <p class="eyebrow">02 · RESUME</p>
+        <h2>履歷準備</h2>
+        <p>依照職缺需求，示範履歷內容應該如何調整。</p>
+      </div>
+
+      <div class="resume-grid">
+        <article class="info-box">
+          <h3>建議強調的經驗</h3>
+          <ul>
+            <li>跨部門協作與專案執行經驗</li>
+            <li>資料分析與商業問題拆解能力</li>
+            <li>與不同利害關係人溝通的經驗</li>
+          </ul>
+        </article>
+
+        <article class="info-box">
+          <h3>Skills to Highlight</h3>
+          <div class="tags">
+            <span>Project Management</span>
+            <span>Data Analysis</span>
+            <span>Communication</span>
+            <span>Problem Solving</span>
+          </div>
+        </article>
+
+        <article class="info-box wide">
+          <h3>Resume Bullet Suggestions</h3>
+          <p class="bullet-example">
+            • Supported cross-functional projects by analyzing business requirements,
+            organizing information, and communicating findings to relevant stakeholders.
+          </p>
+          <p class="note">
+            ※ 此為示範句。未來版本將依照使用者的實際履歷與職缺內容產生客製化建議。
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section alt" id="interview">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">03 · INTERVIEW</p>
+          <h2>面試準備</h2>
+          <p>根據職缺需求，整理不同類型的面試問題。</p>
+        </div>
+
+        <div class="question-grid">
+          <article class="question-card">
+            <p class="question-type">Motivation</p>
+            <h3>動機題</h3>
+            <ul>
+              <li>為什麼想申請這個職位？</li>
+              <li>為什麼想加入這間公司？</li>
+              <li>你希望從這份工作學到什麼？</li>
+            </ul>
+          </article>
+
+          <article class="question-card">
+            <p class="question-type">Behavioral</p>
+            <h3>行為題</h3>
+            <ul>
+              <li>請分享一次跨部門合作的經驗。</li>
+              <li>你曾經如何處理意見不一致？</li>
+              <li>請分享一個你解決問題的例子。</li>
+            </ul>
+          </article>
+
+          <article class="question-card">
+            <p class="question-type">Role-specific</p>
+            <h3>職務題</h3>
+            <ul>
+              <li>你認為這個職位最重要的能力是什麼？</li>
+              <li>如果同時有多個任務，你會如何排序？</li>
+              <li>你會如何快速理解一個陌生的業務問題？</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="center">
+          <button class="secondary-btn" id="mockBtn">開始模擬面試（示範）</button>
+          <p class="status" id="mockStatus"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <strong>JobPrep AI</strong>
+        <p>本網站為課程 MVP 作業示範。</p>
+      </div>
+      <p>Future: AI JD Analysis · Resume Review · Mock Interview</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
